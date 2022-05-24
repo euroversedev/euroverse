@@ -1,9 +1,59 @@
-site_name: My Docs
+# Project information
+site_name: Euroverse
+site_url: https://euroversedev.github.io/euroverse/
+site_author: euroversedev@gmail.com
+site_description: >-
+  The universe where Korean developer Euro lives and wants to live.
 
+# Repository
+# repo_name: euroversedev/euroverse
+# repo_url: https://github.com/euroversedev/euroverse
+
+# Copyright
+copyright: Copyright &copy; 2022 - euroversedev@gmail.com
+
+# Configuration
 theme:
   name: material
   custom_dir: overrides
-
+  language: en
+  features:
+    - content.code.annotate
+    # - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:  # see https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/#color-scheme
+    - scheme: default # default: light mode // slate: dark mode
+      primary: blue grey # Primary Color
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - scheme: slate
+      primary: grey
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
 
 # Customization CSS/JS 
 # https://squidfunk.github.io/mkdocs-material/customization/#additional-css
@@ -11,3 +61,65 @@ extra_css:
   - stylesheets/extra.css
 extra_javascript:
   - javascripts/extra.js
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/euroversedev
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:materialx.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+  - Home: index.md
+  - CV: cv.md
+  - Vision: vision.md
+  - Documents:
+    - docs1: documents/docs1.md
+    - docs2: documents/docs2.md
+  - Project:
+    - proj1: project/proj1.md
+    - proj2: project/proj2.md
+  - Essay:
+    - esy1: essay/esy1.md
+    - esy2: essay/esy2.md
+    - test: notebooks.html
