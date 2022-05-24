@@ -2,3 +2,12 @@ site_name: My Docs
 
 theme:
   name: material
+  custom_dir: overrides
+
+
+# Customization CSS/JS 
+# https://squidfunk.github.io/mkdocs-material/customization/#additional-css
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/extra.js
