@@ -15,7 +15,7 @@ copyright: Copyright &copy; 2022 - euroversedev@gmail.com
 # Configuration
 theme:
   name: material
-  custom_dir: overrides
+  # custom_dir: overrides
   language: en
   features:
     - content.code.annotate
