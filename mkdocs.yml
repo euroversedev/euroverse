@@ -55,6 +55,10 @@ theme:
   icon:
     logo: logo
 
+# Plugins
+plugins:
+  - mkdocs-jupyter:
+
 # Customization CSS/JS 
 # https://squidfunk.github.io/mkdocs-material/customization/#additional-css
 extra_css:
@@ -111,15 +115,16 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - CV: cv.md
   - Vision: vision.md
-  - Documents:
-    - docs1: documents/docs1.md
-    - docs2: documents/docs2.md
+  - CV: cv.md
   - Project:
     - proj1: project/proj1.md
     - proj2: project/proj2.md
+  - Documents:
+    - docs1: documents/docs1.md
+    - docs2: documents/docs2.md
   - Essay:
     - esy1: essay/esy1.md
     - esy2: essay/esy2.md
-    - test: notebooks.html
+    - test: "[HW8]_Practice_6_송유럽.ipynb"
+    
