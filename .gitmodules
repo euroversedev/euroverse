@@ -1,0 +1,3 @@
+[submodule "docs/TeamNotes-for-CodingTest-with-Python"]
+	path = docs/TeamNotes-for-CodingTest-with-Python
+	url = https://github.com/euroversedev/TeamNotes-for-CodingTest-with-Python.git

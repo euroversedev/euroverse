@@ -5,7 +5,7 @@ site_author: euroversedev@gmail.com
 site_description: >-
   The universe where Korean developer Euro lives and wants to live.
 
-# Repository
+# Repository : 주석 제거하면 레포지토리 링크 배너 생성됨.
 # repo_name: euroversedev/euroverse
 # repo_url: https://github.com/euroversedev/euroverse
 
@@ -51,12 +51,14 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
-  favicon: assets/favicon.png
+  favicon: assets/images/favicon.png
   icon:
     logo: logo
 
 # Plugins
 plugins:
+  - search
+  #- git-revision-date # 최종 수정 일자 표시
   - mkdocs-jupyter:
 
 # Customization CSS/JS 
@@ -127,4 +129,9 @@ nav:
     - esy1: essay/esy1.md
     - esy2: essay/esy2.md
     - test: "[HW8]_Practice_6_송유럽.ipynb"
-    
+    - pyte: https://euroversedev.github.io/eurodocs
+    - tes: TeamNotes-for-CodingTest-with-Python/Extra.md
+    - tewee: Programmers_Python/Greedy/01.py
+    - Graph:
+      - 다익스트라: TeamNotes-for-CodingTest-with-Python/Graph/dijkstra_shortest_path.py
+      - 폴리읃: TeamNotes-for-CodingTest-with-Python/Graph/floyd_warshall.py
