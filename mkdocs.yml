@@ -167,4 +167,4 @@ nav:
   - Blog: essay/esy1.md
   - Book Report: test1/hello.md
   - Welleness: test1/hello.md
-  - submodule: '!include ./testsub/mkdocs.yml'
+  - submodule: '!include ../docs/testsub/mkdocs.yml'
