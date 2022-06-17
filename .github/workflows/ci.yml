@@ -15,5 +15,6 @@ jobs:
       - run: pip install mkdocs-jupyter
       - run: pip install mkdocs-redirects
       - run: pip install mkdocs-monorepo-plugin
+      - run: pip install mkdocs-blogging-plugin
       # - run: pip install mkdocs-git-revision-date-plugin
       - run: mkdocs gh-deploy --force
