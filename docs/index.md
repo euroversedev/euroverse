@@ -1,5 +1,5 @@
 # Welcome to MkDocs
-
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=euroversedev)](https://github.com/anuraghazra/github-readme-stats)
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).  
 {x.x.x} 123
 ## Commands

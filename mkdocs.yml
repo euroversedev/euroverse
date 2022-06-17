@@ -2,7 +2,7 @@
 site_name: Euroverse
 site_url: https://euroversedev.github.io/euroverse/
 site_author: euroversedev@gmail.com
-site_description: >-
+site_description:
   The universe where Korean developer Euro lives and wants to live.
 
 # Repository : 주석 제거하면 레포지토리 링크 배너 생성됨.
@@ -11,6 +11,7 @@ site_description: >-
 
 # Copyright
 copyright: Copyright &copy; 2022 - euroversedev@gmail.com
+
 
 # Configuration
 theme:
@@ -54,12 +55,38 @@ theme:
   favicon: assets/images/favicon.png
   icon:
     logo: logo
+  logo: logo.png
 
 # Plugins
 plugins:
   - search
   #- git-revision-date # 최종 수정 일자 표시
   - mkdocs-jupyter:
+  
+  # - redirects:
+  #     redirect_maps:
+  #       'old.md': 'new.md'
+
+  # Blog Template 관련
+  - blogging:
+      dirs:
+        - essay
+      categories:
+        - name: daily
+          dirs:
+            - daily
+      size: 5            # Number of articles in one page, default: 10
+      sort: 
+        from: new        # Sort from new to old, default
+        # or old         # Sort from old to new
+        by: creation     # Sort by the first commit time, default
+        # or revision    # Sort by the latest commit time
+      paging: false      # Disable paging
+      show_total: false  # Remove 'total pages' label
+      template: overrides/blog-override.html # Path to customized template
+      theme:             # Use a predefined theme
+        name: card
+  - monorepo
 
 # Customization CSS/JS 
 # https://squidfunk.github.io/mkdocs-material/customization/#additional-css
@@ -126,8 +153,6 @@ nav:
     - docs1: documents/docs1.md
     - docs2: documents/docs2.md
   - Essay:
-    - esy1: essay/esy1.md
-    - esy2: essay/esy2.md
     - test: "[HW8]_Practice_6_송유럽.ipynb"
     - pyte: https://euroversedev.github.io/eurodocs
     - tes: TeamNotes-for-CodingTest-with-Python/Extra.md
@@ -135,4 +160,11 @@ nav:
     - Graph:
       - 다익스트라: TeamNotes-for-CodingTest-with-Python/Graph/dijkstra_shortest_path.py
       - 폴리읃: TeamNotes-for-CodingTest-with-Python/Graph/floyd_warshall.py
-      - readme: TeamNotes-for-CodingTest-with-Python/README.md
+      - readme: https://github.com/euroversedev/TeamNotes-for-CodingTest-with-Python/Graph/floyd_warshall.py
+  - Book:
+    - 이기는게임을하라: TeamNotes-for-CodingTest-with-Python/README.md
+    - ge: test1/hello.md
+  - Blog: essay/esy1.md
+  - Book Report: test1/hello.md
+  - Welleness: test1/hello.md
+  - submodule: '!include docs/testsub/mkdocs.yml'
